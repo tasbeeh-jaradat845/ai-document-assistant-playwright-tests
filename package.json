@@ -1,0 +1,21 @@
+{
+  "name": "ai-document-assistant-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright assessment solution for an AI-powered document assistant",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:ai": "playwright test tests/ai",
+    "test:security": "playwright test tests/security",
+    "test:performance": "playwright test tests/performance",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test tests/api tests/ai tests/security",
+    "test:ui": "playwright test tests/ui",
+    "test:headed": "playwright test tests/ui --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}
